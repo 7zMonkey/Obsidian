@@ -16,12 +16,12 @@
             }
           },
           {
-            "id": "16d16080dc3b928c",
+            "id": "4b5d5d3623470d89",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小说/我也不知道这是什么东西.md",
+                "file": "Svelte/Svelte 初体验.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小说/我也不知道这是什么东西.md",
+                "file": "Svelte/Svelte 初体验.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小说/我也不知道这是什么东西.md",
+                "file": "Svelte/Svelte 初体验.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小说/我也不知道这是什么东西.md"
+                "file": "Svelte/Svelte 初体验.md"
               }
             }
           }
@@ -150,20 +150,22 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "16d16080dc3b928c",
+  "active": "4b5d5d3623470d89",
   "lastOpenFiles": [
-    "小说/测试关系图.md",
+    "Test/简历.md",
+    "Test",
     "小说/我也不知道这是什么东西.md",
-    "Svelte/Svelte 初体验.md",
+    "小说/测试关系图.md",
     "2023-07-26.md",
+    "Excalidraw/Drawing 2023-06-29 14.56.36.excalidraw.md",
+    "Excalidraw/Drawing 2023-06-29 14.56.35.excalidraw.md",
     "Excalidraw/Drawing 2023-06-29 14.56.37.excalidraw.md",
+    "Svelte/Svelte 初体验.md",
     "小说/未命名",
     "小说",
     "未命名/a.md",
     "未命名/简历.md",
     "未命名",
-    "Excalidraw/Drawing 2023-06-29 14.56.36.excalidraw.md",
-    "Excalidraw/Drawing 2023-06-29 14.56.35.excalidraw.md",
     "Excalidraw",
     "Svelte",
     "未命名.canvas",
