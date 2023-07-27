@@ -48,6 +48,8 @@ jobs:
     steps:
       - name: Install hexo-cli
         run: npm install -g hexo-cli
+      - name: ls
+        run: ls -a
       - name: cd hexo-template
         run: cd hexo-template
       - name: Hexo generate
@@ -69,7 +71,7 @@ jobs:
         run: git clone ${{ env.BLOG }} blog --depth 1
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
       - name: Move Generate Files
-        run: mv ~/hexo-template/public ~/blog
+        run: mv hexo-template/public ~/blog
       - name: Run Git commands
         run: |
           git status
