@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ env.BLOG }}
-          path: hexo-blog
+          path: blog
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
 
       - name: Move Generate Files
