@@ -54,6 +54,7 @@ jobs:
 
       - name: Run Git commands
         run: |
+          cd blog
           git status
           git add .
           git commit -m ":rocket:display: $(date)"
