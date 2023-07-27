@@ -49,7 +49,7 @@ jobs:
       - name: Move Generate Files
         run: mv hexo-template/public blog
       
-      - name: ls
+      - name: Ls
         run: ls -a blog
 
       - name: Set Git Identity
