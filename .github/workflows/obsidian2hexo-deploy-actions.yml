@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Display Git version
         run: git --version
       - name: Git clone
@@ -61,6 +63,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       
       - name: Display Git version
         run: git --version
@@ -69,7 +73,7 @@ jobs:
         run: git clone ${{ env.BLOG }} blog --depth 1
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
       - name: Move Generate Files
-        run: mv ~/hexo-template ~/blog
+        run: mv ~/hexo-template/public ~/blog
       - name: Run Git commands
         run: |
           git status
