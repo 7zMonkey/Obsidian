@@ -56,13 +56,15 @@ jobs:
         run: |
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "${{ secrets.NAME }}"
-
+          
       - name: Run Git commands
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cd blog
-          git status
-          git add .
-          git commit -m ":rocket:display: $(date)"
-          git push
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: master
+          folder: public
+          repository-name: zMonkey/7zMonkey.github.io
+          clean: false
+          # clean-exclude: .nojekyll
+          #   .ssh
+          #   .git
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
