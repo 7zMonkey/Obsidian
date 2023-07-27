@@ -43,11 +43,15 @@ jobs:
       - name: Display Git version
         run: git --version
         
-      - name: Git clone
-        run: git clone ${{ env.BLOG }} blog --depth 1
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.BLOG }}
+          path: hexo-blog
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
+
       - name: Move Generate Files
-        run: mv hexo-template/public ~/blog
+        run: mv hexo-template/public blog
 
       - name: Run Git commands
         run: |
