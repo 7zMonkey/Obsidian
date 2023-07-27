@@ -67,4 +67,5 @@ jobs:
           # clean-exclude: .nojekyll
           #   .ssh
           #   .git
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
           ssh-key: ${{ secrets.DEPLOY_KEY }}
