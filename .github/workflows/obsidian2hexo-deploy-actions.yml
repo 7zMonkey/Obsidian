@@ -1,0 +1,78 @@
+name: obsidian2hexo-deploy-actions
+# 把 obsidian 转换成博客
+on:
+  push:
+    branches:
+      # 监听 master 分支如果有变动调用当前Actions
+      - master
+# 环境变量
+env:
+  HEXO_TEMPLATE: git@github.com:7zMonkey/obsidian2hexo-template.git
+  BLOG: git@github.com:7zMonkey/7zMonkey.github.io.git
+jobs:
+# 拉取 hexo 模板
+  pull_hexo-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Display Git version
+        run: git --version
+      - name: Git clone
+        run: git clone ${{ env.HEXO_TEMPLATE }} hexo-template --depth 1
+        # run 后面跟随 git 拉取的仓库 目标路径改为hexo-template
+  # 检出当前Obsidian文件
+  pull_obsidian-doc:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        path: obsidian-doc
+  # 安装依赖
+  install_hexo-modules:
+    runs-on: ubuntu-latest
+    needs: pull_hexo-template
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: cd hexo-template
+        run: cd hexo-template
+      - name: Install node_modules
+        run: npm install
+        
+  # 生成静态文件
+  generate_blog:
+    runs-on: ubuntu-latest
+    needs: [pull_hexo-template, pull_obsidian-doc, install_hexo-modules]
+    steps:
+      - name: Install hexo-cli
+        run: npm install -g hexo-cli
+      - name: cd hexo-template
+        run: cd hexo-template
+      - name: Hexo generate
+        run: hexo generate
+  # 部署blog
+  push_blog:
+    runs-on: ubuntu-latest
+    needs: generate_blog
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Display Git version
+        run: git --version
+        
+      - name: Git clone
+        run: git clone ${{ env.BLOG }} blog --depth 1
+        # run 后面跟随 git 拉取的仓库 目标路径改为blog
+      - name: Move Generate Files
+        run: mv ~/hexo-template ~/blog
+      - name: Run Git commands
+        run: |
+          git status
+          git add .
+          git commit -m ":rocket:display: $(date)"
+          git push
