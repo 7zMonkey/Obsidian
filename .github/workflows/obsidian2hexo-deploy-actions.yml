@@ -30,9 +30,6 @@ jobs:
         with:
           node-version: '16'
 
-      - name: ls
-        run: ls -a
-
       - name: Hexo generate
         run: |
           cd hexo-template
@@ -52,6 +49,9 @@ jobs:
 
       - name: Move Generate Files
         run: mv hexo-template/public blog
+      
+      - name: ls
+        run: ls -a blog
 
       - name: Run Git commands
         run: |
