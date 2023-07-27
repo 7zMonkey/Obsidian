@@ -58,6 +58,8 @@ jobs:
           git config --global user.name "${{ secrets.NAME }}"
 
       - name: Run Git commands
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd blog
           git status
