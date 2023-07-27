@@ -33,20 +33,12 @@ jobs:
       - name: ls
         run: ls -a
 
-      - name: cd hexo-template
-        run: cd hexo-template
-
-      - name: Install node_modules
-        run: npm install
-
-      - name: Install hexo-cli
-        run: npm install -g hexo-cli
-
-      - name: cd hexo-template
-        run: cd hexo-template
-
       - name: Hexo generate
-        run: hexo generate
+        run: |
+          cd hexo-template
+          npm install
+          npm install -g hexo-cli
+          hexo generate
 
       - name: Display Git version
         run: git --version
