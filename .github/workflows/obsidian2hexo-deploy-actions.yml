@@ -52,6 +52,11 @@ jobs:
       - name: ls
         run: ls -a blog
 
+      - name: Set Git Identity
+        run: |
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git config --global user.name "${{ secrets.NAME }}"
+
       - name: Run Git commands
         run: |
           cd blog
