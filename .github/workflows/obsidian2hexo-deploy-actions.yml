@@ -62,7 +62,11 @@ jobs:
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-
+      - name: Set Git Identity
+        run: |
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git config --global user.name "${{ secrets.NAME }}"
+        
       - name: Run Git commands
         run: |
           cd blog
