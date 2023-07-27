@@ -7,7 +7,7 @@ on:
       - master
 # 环境变量
 env:
-  HEXO_TEMPLATE: git@github.com:7zMonkey/obsidian2hexo-template.git
+  HEXO_TEMPLATE: 7zMonkey/obsidian2hexo-template
   BLOG: git@github.com:7zMonkey/7zMonkey.github.io.git
 jobs:
 # 拉取 hexo 模板
@@ -17,12 +17,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-      - name: Display Git version
-        run: git --version
-      - name: Git clone
-        run: git clone ${{ env.HEXO_TEMPLATE }} hexo-template --depth 1
-        # run 后面跟随 git 拉取的仓库 目标路径改为hexo-template
+          repository: ${{ env.HEXO_TEMPLATE }}
+          path: hexo-template
   # 检出当前Obsidian文件
   pull_obsidian-doc:
     runs-on: ubuntu-latest
