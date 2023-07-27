@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
       - name: Display Git version
         run: git --version
       - name: Git clone
@@ -64,7 +64,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
       
       - name: Display Git version
         run: git --version
