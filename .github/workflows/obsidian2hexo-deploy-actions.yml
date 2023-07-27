@@ -62,7 +62,7 @@ jobs:
         with:
           branch: master
           folder: blog
-          repository-name: zMonkey/7zMonkey.github.io
+          repository-name: 7zMonkey/7zMonkey.github.io
           clean: false
           # clean-exclude: .nojekyll
           #   .ssh
