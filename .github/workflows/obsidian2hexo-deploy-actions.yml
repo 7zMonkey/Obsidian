@@ -30,6 +30,9 @@ jobs:
         with:
           node-version: '16'
 
+      - name: ls
+        run: ls -a
+
       - name: cd hexo-template
         run: cd hexo-template
 
@@ -38,9 +41,6 @@ jobs:
 
       - name: Install hexo-cli
         run: npm install -g hexo-cli
-
-      - name: ls
-        run: ls -a
 
       - name: cd hexo-template
         run: cd hexo-template
