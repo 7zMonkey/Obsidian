@@ -8,7 +8,7 @@ on:
 # 环境变量
 env:
   HEXO_TEMPLATE: 7zMonkey/obsidian2hexo-template
-  BLOG: git@github.com:7zMonkey/7zMonkey.github.io.git
+  BLOG: 7zMonkey/7zMonkey.github.io.git
 jobs:
 # 拉取 hexo 模板
   obsidian2hexo-deploy-actions:
