@@ -19,11 +19,13 @@ jobs:
         with:
           repository: ${{ env.HEXO_TEMPLATE }}
           path: hexo-template
+          fetch-depth: 0
 
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           path: obsidian-doc
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -45,6 +47,7 @@ jobs:
         with:
           repository: ${{ env.BLOG }}
           path: blog
+          fetch-depth: 0
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
 
       - name: Move Generate Files
