@@ -64,3 +64,16 @@ jobs:
           token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
           repository: ${{ env.BLOG }}
           event-type: devops-hexo
+      
+      - name: 部署页面
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: master
+          folder: blog
+          repository-name: 7zMonkey/7zMonkey.github.io
+          clean: false
+          # clean-exclude: .nojekyll
+          #   .ssh
+          #   .git
+          # ssh-key: ${{ secrets.DEPLOY_KEY }}
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
