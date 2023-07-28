@@ -1,4 +1,11 @@
-
+---
+title: Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客
+tags: 
+	- 博客
+categories:
+date: 2023-07-29 12:43:27
+hidden: false
+---
 ```mermaid
 sequenceDiagram
 participant Local as Local

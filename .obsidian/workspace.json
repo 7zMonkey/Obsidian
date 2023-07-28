@@ -33,14 +33,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "博客/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "博客/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "博客/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/浅谈 CSS 选择器优先级的计算规则.md"
+                "file": "博客/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md"
               }
             }
           }
@@ -163,13 +163,13 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "89b5eb1b9ecade6e",
+  "active": "cbf8b9ab9cf2de0d",
   "lastOpenFiles": [
     "博客/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
+    "博客/浅谈 CSS 选择器优先级的计算规则.md",
     "模板/标准模板.md",
     "Svelte/Svelte 初体验.md",
     "未命名",
-    "博客/浅谈 CSS 选择器优先级的计算规则.md",
     "博客",
     "个人文件/简历.md",
     "未命名.md",
