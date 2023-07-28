@@ -19,7 +19,6 @@ jobs:
         with:
           repository: ${{ env.HEXO_TEMPLATE }}
           path: hexo-template
-          fetch-depth: 0
 
       - name: Checkout code
         uses: actions/checkout@v2
@@ -38,14 +37,11 @@ jobs:
           npm install
           npm install -g hexo-cli
           hexo generate
-
-      - name: Display Git version
-        run: git --version
         
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          repository: ${{ env.BLOG }}
+          repository: 7zMonkey/7zMonkey.github.io
           path: blog
           fetch-depth: 0
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
@@ -56,22 +52,18 @@ jobs:
       - name: Ls
         run: ls -a blog
 
-      - name: Write to ~/.ssh/id_rsa
-        run: |
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: Set Git Identity
         run: |
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "${{ secrets.NAME }}"
-        
+          
       - name: Run Git commands
-        run: |
-          cd blog
-          ls
-          git status
-          git add .
-          git commit -m ":rocket:display: $(date)"
-          git push
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          folder: blog
+          clean: false
+          # clean-exclude: .nojekyll
+          #   .ssh
+          #   .git
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
