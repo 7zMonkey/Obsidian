@@ -38,16 +38,18 @@ jobs:
           npm install -g hexo-cli
           hexo generate
         
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          repository: 7zMonkey/7zMonkey.github.io
-          path: blog
-          fetch-depth: 0
+      # - name: Checkout code
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: 7zMonkey/7zMonkey.github.io
+      #     path: blog
+      #     fetch-depth: 0
         # run 后面跟随 git 拉取的仓库 目标路径改为blog
 
       - name: Move Generate Files
-        run: mv hexo-template/public blog
+        run: |
+          mkdir blog
+          mv hexo-template/public blog
       
       - name: Ls
         run: ls -a blog
