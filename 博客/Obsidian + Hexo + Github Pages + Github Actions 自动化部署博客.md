@@ -17,26 +17,17 @@ opt 推送 Obsidian 触发
 	Obsidian->>Obsidian: 触发
 end
 opt 推送 Hexo template 触发
+	Note over Local: 这是一个提示信息
 	Local->>Hexo: 推送
+	Note over Hexo: Hexo Actions
+	activate Hexo
 	Hexo->>Obsidian: 触发
+	deactivate Hexo
 end
+activate Obsidian
+Note over Obsidian: Obsidian Actions
 Hexo->>Obsidian: 拉取
 Obsidian->>Obsidian:生成静态文件
 Obsidian->>Github:推送
+deactivate Obsidian
 ```
-	click Obsidian "https://github.com/7zMonkey/Obsidian"
-click Hexo "https://github.com/7zMonkey/obsidian2hexo-template"
-click Github "https://github.com/7zMonkey/7zMonkey.github.io"
-subgraph 触发方式1
-Local--推送-->Obsidian
-end
-subgraph obsidian actions
-Obsidian<--拉取-->Hexo
-Obsidian==推送==>Github
-end
-subgraph 触发方式2
-Local--推送-->Hexo
-end
-subgraph hexo actions
-Hexo-.-触发-.->Obsidian
-end
