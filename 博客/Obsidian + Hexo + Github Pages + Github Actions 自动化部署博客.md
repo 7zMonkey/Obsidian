@@ -17,7 +17,6 @@ opt 推送 Obsidian 触发
 	Obsidian->>Obsidian: 触发
 end
 opt 推送 Hexo template 触发
-	Note over Local: 这是一个提示信息
 	Local->>Hexo: 推送
 	Note over Hexo: Hexo Actions
 	activate Hexo
