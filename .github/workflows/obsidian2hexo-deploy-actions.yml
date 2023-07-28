@@ -5,6 +5,9 @@ on:
     branches:
       # 监听 master 分支如果有变动调用当前Actions
       - master
+  repository_dispatch:
+      types:
+        - hexo-template-update
 # 环境变量
 env:
   HEXO_TEMPLATE: 7zMonkey/obsidian2hexo-template
