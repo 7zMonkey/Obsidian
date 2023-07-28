@@ -53,7 +53,7 @@ jobs:
       - name: Move Generate Files
         run: |
           mkdir blog
-          mv hexo-template/public blog
+          mv hexo-template/public/* blog
       
       - name: Ls
         run: ls -a blog
