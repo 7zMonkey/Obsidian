@@ -57,3 +57,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./blog
+
+      - name: Call other repository workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          repository: ${{ env.BLOG }}
+          event-type: devops-hexo
