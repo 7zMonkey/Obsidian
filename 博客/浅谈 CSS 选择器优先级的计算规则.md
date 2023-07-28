@@ -118,7 +118,7 @@ MDN指出“使用 `!important` 是一个**坏习惯**，应该尽量避免”�
 
 > 注意: 文档树中元素的接近度（[Proximity of elements](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity#无视DOM树中的距离)）对优先级没有影响。
 
-### 参考文献!important
+### 参考文献
 
 1. [Selectors Level 4](http://www.w3.org/TR/selectors/#specificity)
 2. [优先级 - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
