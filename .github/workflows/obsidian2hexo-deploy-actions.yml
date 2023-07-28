@@ -31,6 +31,10 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Mv docs
+        run: |
+          mkdir hexo-template/source/_posts
+          mv obsidian-doc/*.md hexo-template/source/_posts
       - name: Hexo generate
         run: |
           cd hexo-template
