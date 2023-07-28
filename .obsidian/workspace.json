@@ -16,7 +16,19 @@
             }
           },
           {
-            "id": "4b5d5d3623470d89",
+            "id": "cbf8b9ab9cf2de0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模板/标准模板.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f02b8a6f29b7fa89",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -28,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -150,26 +162,30 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "4b5d5d3623470d89",
+  "active": "f02b8a6f29b7fa89",
   "lastOpenFiles": [
-    "Test/简历.md",
-    "Test",
+    "博客/浅谈 CSS 选择器优先级的计算规则.md",
+    "模板/标准模板.md",
+    "Svelte/Svelte 初体验.md",
+    "博客",
+    "个人文件/简历.md",
+    "未命名.md",
+    "模板",
+    "Test/未命名",
+    "个人文件",
     "小说/我也不知道这是什么东西.md",
     "小说/测试关系图.md",
     "2023-07-26.md",
     "Excalidraw/Drawing 2023-06-29 14.56.36.excalidraw.md",
     "Excalidraw/Drawing 2023-06-29 14.56.35.excalidraw.md",
     "Excalidraw/Drawing 2023-06-29 14.56.37.excalidraw.md",
-    "Svelte/Svelte 初体验.md",
     "小说/未命名",
     "小说",
     "未命名/a.md",
     "未命名/简历.md",
-    "未命名",
     "Excalidraw",
     "Svelte",
     "未命名.canvas",
-    "未命名.md",
     "2023-06-29.md"
   ]
 }
