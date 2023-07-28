@@ -33,8 +33,8 @@ jobs:
 
       - name: Mv docs
         run: |
-          mkdir hexo-template/source/_posts
-          mv obsidian-doc/*.md hexo-template/source/_posts
+          mkdir -p hexo-template/source/_posts
+          mv -r obsidian-doc/* hexo-template/source/_posts
       - name: Hexo generate
         run: |
           cd hexo-template
