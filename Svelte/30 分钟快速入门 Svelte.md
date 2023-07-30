@@ -3,15 +3,14 @@ title: 30 分钟快速入门 Svelte
 tags: 
 categories:
 date: 2023-07-30 01:12:55
-hidden: false
----
-# 30 分钟快速入门 Svelte
-
-![bg left:40% 80%](https://marp.app/assets/marp.svg)
-
+hidden: true
 ---
 
-## 什么是 Svelte？
+# 30 分钟快速上手 Svelte
+
+---
+
+## 什么是 Svelte
 
 - Svelte 是一个现代的 JavaScript 框架，用于构建用户界面
 - 与传统框架不同，Svelte 在构建时将代码转换为高效的原生 JavaScript 代码
@@ -160,6 +159,10 @@ npm run dev
 </script>
 ```
 
+---
+## 案例编写
+
+### AI-Translate
 ---
 
 ## 总结

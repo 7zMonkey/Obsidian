@@ -1,9 +1,10 @@
 ---
 title: 浅谈 CSS 选择器优先级的计算规则
 tags: 
-	- 技术分享
+	- CSS
+	- WEB 标准
 categories:
-	- 技术分享
+	- CSS
 date: 22022-05-31 19:39:00
 hidden: false
 ---

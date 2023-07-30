@@ -1,12 +1,13 @@
 ---
 title: Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客
 tags: 
-	- 博客
-categories:
+	- DevOps
+	- Github Actions
+categories: DevOps
 date: 2023-07-29 12:43:27
 hidden: false
 ---
-当前网页使用 Obsidian 作为编辑器以及知识库，Hexo 作为静态博客框架，也就是将markdown文档转换为静态 html ，放在 Github 并且部署 Github Pages 上的。
+当前网页使用 Obsidian 作为编辑器以及知识库，Hexo 作为静态博客框架，也、就是将markdown文档转换为静态 html ，放在 Github 并且部署 Github Pages 上的。
 
 个人需需要将 Obsidian 的 markdown 文档放置在一个私有仓库，将 Hexo Template 放置在共有仓库，github pages 也放在另一个仓库，当然 Hexo Template 可以和 Github Pages 放在相同的仓库中，如果Hexo Template也需要分离的话在将其分离。
 
