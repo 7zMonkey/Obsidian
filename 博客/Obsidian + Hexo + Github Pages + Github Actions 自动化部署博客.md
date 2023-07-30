@@ -6,9 +6,9 @@ categories:
 date: 2023-07-29 12:43:27
 hidden: false
 ---
-当前网页使用 Obsidian 作为编辑器以及知识库，Hexo 作为解释器，也就是将markdown文档转换为静态 html ，放在 Github 并且部署 Github Pages 上的。
+当前网页使用 Obsidian 作为编辑器以及知识库，Hexo 作为静态博客框架，也就是将markdown文档转换为静态 html ，放在 Github 并且部署 Github Pages 上的。
 
-个人需求需要将 Obsidian 的 markdown 文档放置在一个私有仓库，将 Hexo Template 放置在共有仓库，github pages 也放在另一个仓库，当然 Hexo Template 可以和 Github Pages 放在相同的仓库中，如果Hexo Template也需要分离的话在将其分离。
+个人需需要将 Obsidian 的 markdown 文档放置在一个私有仓库，将 Hexo Template 放置在共有仓库，github pages 也放在另一个仓库，当然 Hexo Template 可以和 Github Pages 放在相同的仓库中，如果Hexo Template也需要分离的话在将其分离。
 
 静态博客框架仓库和部署仓库分离的好处是如果更换静态博客框架例如Gatsby，VuePress的话，可以不需要修改部署仓库只需要新建新的静态博客框架仓库，调整Obsidian 仓库的 Actions 就可以。
 
@@ -32,15 +32,13 @@ opt 推送 Obsidian 触发
 end
 opt 推送 Hexo template 触发
 	Local->>Hexo: 推送
-	Note over Hexo: Hexo Actions
-	activate Hexo
+	par Hexo Actions
 	Hexo->>Obsidian: 触发
-	deactivate Hexo
+	end
 end
-activate Obsidian
-Note over Obsidian: Obsidian Actions
+par Obsidian Actions
 Hexo->>Obsidian: 拉取
 Obsidian->>Obsidian:生成静态文件
 Obsidian->>Github:推送
-deactivate Obsidian
+end
 ```
