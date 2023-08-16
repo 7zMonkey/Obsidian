@@ -8,6 +8,6 @@ hidden: true
 
 使用 Bable 实现自定义js 语法
 
-function once functionName () {}
+once function functionName () {}
 
 [[语法树]]

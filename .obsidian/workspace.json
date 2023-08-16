@@ -57,7 +57,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "个人文件/简历.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c347313a3ac1a7ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "个人文件/简历.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a748602d35a27b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "个人文件/Axios 封装.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -134,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "个人文件/Axios 封装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
+                "file": "个人文件/Axios 封装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md"
+                "file": "个人文件/Axios 封装.md"
               }
             }
           }
@@ -198,13 +222,20 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "9f835ae6985bcec4",
+  "active": "0a748602d35a27b2",
   "lastOpenFiles": [
-    "博客/Babel/语法树.md",
-    "博客/Babel/使用 Babel 自定义 js 语法.md",
+    "个人文件/使用 wordpress 建立企业站点.md",
+    "个人文件/Axios 封装.md",
+    "个人文件/招聘软件简历填写.md",
+    "个人文件/简历.md",
     "博客/DevOps/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
-    "博客/DevOps",
+    "Svelte/30 分钟快速入门 Svelte.md",
+    "博客/Babel/使用 Babel 自定义 js 语法.md",
+    "博客/路线图.md",
     "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
+    "博客/Babel/语法树.md",
+    "Svelte/Svelte 初体验.md",
+    "博客/DevOps",
     "博客/Web 标准/CSS",
     "博客/Web 标准/Javascript",
     "博客/Web 标准",
@@ -212,13 +243,9 @@
     "博客/Webpack",
     "博客/Babel",
     "博客/使用 Bable 实现.md",
-    "Svelte/Svelte 初体验.md",
-    "Svelte/30 分钟快速入门 Svelte.md",
-    "未命名.md",
     "模板/标准模板.md",
     "未命名",
     "博客",
-    "个人文件/简历.md",
     "模板",
     "小说/我也不知道这是什么东西.md",
     "小说/测试关系图.md",
