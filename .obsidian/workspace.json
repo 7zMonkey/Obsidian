@@ -81,7 +81,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md"
+                "file": "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md"
               }
             }
           }
@@ -224,8 +224,8 @@
   },
   "active": "0a748602d35a27b2",
   "lastOpenFiles": [
-    "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
     "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+    "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
     "博客/Babel/语法树.md",
     "博客/Babel/使用 Babel 自定义 js 语法.md",
     "个人文件/Axios 封装.md",
