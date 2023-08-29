@@ -67,25 +67,25 @@ jobs:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     publish_dir: ./blog
 
-      # - name: Call other repository workflow
-      #   uses: peter-evans/repository-dispatch@v1
-      #   with:
-      #     token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-      #     repository: ${{ env.BLOG }}
-      #     event-type: devops-hexo
-      
-      - name: 部署页面
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - name: Call other repository workflow
+        uses: peter-evans/repository-dispatch@v1
         with:
-          branch: master
-          folder: blog
-          repository-name: 7zMonkey/test-actions
-          clean: false
-          # clean-exclude: .nojekyll
-          #   .ssh
-          #   .git
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          # token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          repository: ${{ env.BLOG }}
+          event-type: devops-hexo
+      
+      # - name: 部署页面
+      #   uses: JamesIves/github-pages-deploy-action@v4.2.5
+      #   with:
+      #     branch: master
+      #     folder: blog
+      #     repository-name: 7zMonkey/test-actions
+      #     clean: false
+      #     # clean-exclude: .nojekyll
+      #     #   .ssh
+      #     #   .git
+      #     ssh-key: ${{ secrets.DEPLOY_KEY }}
+      #     # token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
 
       # - name: Push To Pages
       #   working-directory: ./blog # 指定下面指令运行的目录
