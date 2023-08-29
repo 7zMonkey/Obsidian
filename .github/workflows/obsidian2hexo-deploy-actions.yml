@@ -74,25 +74,25 @@ jobs:
       #     repository: ${{ env.BLOG }}
       #     event-type: devops-hexo
       
-      # - name: 部署页面
-      #   uses: JamesIves/github-pages-deploy-action@v4.2.5
-      #   with:
-      #     branch: master
-      #     folder: blog
-      #     repository-name: 7zMonkey/test-actions
-      #     clean: false
-      #     # clean-exclude: .nojekyll
-      #     #   .ssh
-      #     #   .git
-      #     ssh-key: ${{ secrets.DEPLOY_KEY }}
-      #     # token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+      - name: 部署页面
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: master
+          folder: blog
+          repository-name: 7zMonkey/test-actions
+          clean: false
+          # clean-exclude: .nojekyll
+          #   .ssh
+          #   .git
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          # token: ${{ secrets.SERVICE_ACCOUNT_KEY }}
 
-      - name: Push To Pages
-        working-directory: ./blog # 指定下面指令运行的目录
-        run: |
-          git init
-          git checkout -b main
-          git add -A
-          git -c user.name='${{ secrets.NAME }}' -c user.email='${{ secrets.EMAIL }}' commit -m 'deploy by actions <${{secrets.NAME}}>'
-          git remote add origin https://${{secrets.SERVICE_ACCOUNT_KEY}}@github.com/${{env.BLOG}}.git
-          git push origin main -f -q
+      # - name: Push To Pages
+      #   working-directory: ./blog # 指定下面指令运行的目录
+      #   run: |
+      #     git init
+      #     git checkout -b main
+      #     git add -A
+      #     git -c user.name='${{ secrets.NAME }}' -c user.email='${{ secrets.EMAIL }}' commit -m 'deploy by actions <${{secrets.NAME}}>'
+      #     git remote add origin https://${{secrets.SERVICE_ACCOUNT_KEY}}@github.com/${{env.BLOG}}.git
+      #     git push origin main -f -q
