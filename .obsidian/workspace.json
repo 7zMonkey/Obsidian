@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "个人文件/简历.md",
+                "file": "博客/Web 标准/Javascript/Event Loop 事件循环.md",
                 "mode": "source",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "个人文件/简历.md",
+                "file": "博客/Web 标准/Javascript/Event Loop 事件循环.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "个人文件/简历.md",
+                "file": "博客/Web 标准/Javascript/Event Loop 事件循环.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "个人文件/简历.md"
+                "file": "博客/Web 标准/Javascript/Event Loop 事件循环.md"
               }
             }
           },
@@ -220,12 +220,15 @@
   },
   "active": "ab4c21e072a26abf",
   "lastOpenFiles": [
-    "配置记录/Ubuntu 20.04 安装 Docker.md",
+    "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+    "配置记录/AnonAddy 配置记录.md",
+    "个人文件/Axios 封装.md",
+    "个人文件/招聘软件简历填写.md",
+    "个人文件/未命名.md",
+    "个人文件/使用 wordpress 建立企业站点.md",
     "个人文件/简历 2.0.md",
     "个人文件/简历.md",
-    "个人文件/未命名.md",
-    "个人文件/招聘软件简历填写.md",
-    "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+    "配置记录/Ubuntu 20.04 安装 Docker.md",
     "博客/Web 标准/Javascript/手写 Promise.md",
     "博客/设计模式/单例模式 - 使用闭包完成单例模式开发.md",
     "博客/Web 标准/Javascript/Event Loop 事件循环.md",
@@ -236,10 +239,8 @@
     "博客/Babel/使用 Babel 自定义 js 语法.md",
     "Excalidraw/手写 Promise 2023-09-10 19.39.19.excalidraw.md",
     "Excalidraw",
-    "配置记录/AnonAddy 配置记录.md",
     "配置记录",
     "未命名.canvas",
-    "个人文件/使用 wordpress 建立企业站点.md",
     "博客/设计模式/目录.md",
     "书籍/JavaScript 设计模式核⼼原理与应⽤实践.md",
     "书籍",
@@ -250,7 +251,6 @@
     "博客/Babel/语法树.md",
     "博客/设计模式",
     "博客/未命名.md",
-    "个人文件/Axios 封装.md",
     "博客/DevOps",
     "博客/Web 标准/CSS",
     "博客/Web 标准/Javascript",
