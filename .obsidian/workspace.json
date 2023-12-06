@@ -4,55 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "0f1076ffc14ac70d",
+        "id": "87ddec61cfdd9d81",
         "type": "tabs",
         "children": [
           {
-            "id": "9d6a4672f8ceb408",
+            "id": "97c7431c29bfcb97",
             "type": "leaf",
             "state": {
-              "type": "full-calendar-view",
+              "type": "empty",
               "state": {}
             }
           },
           {
-            "id": "cbf8b9ab9cf2de0d",
+            "id": "53986cb5b81d2623",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Babel/使用 Babel 自定义 js 语法.md",
+                "file": "配置记录/Ubuntu 20.04 安装 Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "de5ebc4df3e51ff3",
+            "id": "244908cd1aa4ade9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Babel/使用 Babel 自定义 js 语法.md",
+                "file": "配置记录/AnonAddy 配置记录.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7df6a31a382bb7ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "博客/Babel/使用 Babel 自定义 js 语法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f835ae6985bcec4",
+            "id": "ab4c21e072a26abf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,43 +52,41 @@
             }
           },
           {
-            "id": "c347313a3ac1a7ad",
+            "id": "e91d37251c08496b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
+          },
+          {
+            "id": "3955d80818d1e0a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "个人文件/简历.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a748602d35a27b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "博客/设计模式/序.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "89b5eb1b9ecade6e",
+            "id": "35bc27dce8b128d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/DevOps/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
+                "file": "配置记录/Ubuntu 20.04 安装 Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -158,13 +144,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/设计模式/序.md",
-                "collapseAll": false,
+                "file": "个人文件/简历.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -175,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/设计模式/序.md",
+                "file": "个人文件/简历.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +184,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/设计模式/序.md"
+                "file": "个人文件/简历.md"
+              }
+            }
+          },
+          {
+            "id": "4455af92059e1ba1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -222,44 +218,44 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "0a748602d35a27b2",
+  "active": "ab4c21e072a26abf",
   "lastOpenFiles": [
-    "博客/设计模式/目录.md",
-    "博客/设计模式/单例模式 - 使用闭包完成单例模式开发.md",
-    "博客/设计模式/序.md",
-    "博客/DevOps/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
-    "博客/Babel/使用 Babel 自定义 js 语法.md",
-    "博客/Babel/语法树.md",
+    "配置记录/Ubuntu 20.04 安装 Docker.md",
+    "个人文件/简历 2.0.md",
+    "个人文件/简历.md",
+    "个人文件/未命名.md",
+    "个人文件/招聘软件简历填写.md",
     "博客/Web 标准/Javascript/关于 JavaScript 中 Object 顺序的一些探索.md",
+    "博客/Web 标准/Javascript/手写 Promise.md",
+    "博客/设计模式/单例模式 - 使用闭包完成单例模式开发.md",
+    "博客/Web 标准/Javascript/Event Loop 事件循环.md",
+    "博客/Web 标准/Javascript/数组等可迭代对象的循环打断.md",
+    "配置记录/Ubuntu 20.04 安装 Mysql.md",
+    "书籍/[掘金小测]JavaScript 设计模式核⼼原理与应⽤实践.md",
+    "未命名.md",
+    "博客/Babel/使用 Babel 自定义 js 语法.md",
+    "Excalidraw/手写 Promise 2023-09-10 19.39.19.excalidraw.md",
+    "Excalidraw",
+    "配置记录/AnonAddy 配置记录.md",
+    "配置记录",
+    "未命名.canvas",
+    "个人文件/使用 wordpress 建立企业站点.md",
+    "博客/设计模式/目录.md",
+    "书籍/JavaScript 设计模式核⼼原理与应⽤实践.md",
+    "书籍",
+    "博客/设计模式/序.md",
+    "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
+    "().md",
+    "博客/DevOps/Obsidian + Hexo + Github Pages + Github Actions 自动化部署博客.md",
+    "博客/Babel/语法树.md",
     "博客/设计模式",
     "博客/未命名.md",
-    "博客/Web 标准/CSS/浅谈 CSS 选择器优先级的计算规则.md",
     "个人文件/Axios 封装.md",
-    "个人文件/使用 wordpress 建立企业站点.md",
-    "个人文件/招聘软件简历填写.md",
-    "个人文件/简历.md",
-    "Svelte/30 分钟快速入门 Svelte.md",
-    "博客/路线图.md",
-    "Svelte/Svelte 初体验.md",
     "博客/DevOps",
     "博客/Web 标准/CSS",
     "博客/Web 标准/Javascript",
     "博客/Web 标准",
     "博客/Vite",
-    "博客/Webpack",
-    "博客/Babel",
-    "博客/使用 Bable 实现.md",
-    "模板/标准模板.md",
-    "未命名",
-    "博客",
-    "小说/我也不知道这是什么东西.md",
-    "小说/测试关系图.md",
-    "2023-07-26.md",
-    "Excalidraw/Drawing 2023-06-29 14.56.36.excalidraw.md",
-    "Excalidraw/Drawing 2023-06-29 14.56.35.excalidraw.md",
-    "Excalidraw/Drawing 2023-06-29 14.56.37.excalidraw.md",
-    "未命名/a.md",
-    "未命名/简历.md",
-    "未命名.canvas"
+    "博客/Webpack"
   ]
 }

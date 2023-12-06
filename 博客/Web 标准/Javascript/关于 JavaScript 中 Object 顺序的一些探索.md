@@ -26,6 +26,7 @@ hidden: false
 
 在通常情况下，如果要处理对象的排序，我建议使用数组处理，也就是将对象处理为 `[{ key, value }]` 这样的的数组形式，按照数组排序，因为我还是觉得对象是无序的，尽管他是按照一定的顺序排序的，但为了避免在不同的浏览器中的排序不同还是将他作为数组处理比较好。
 ### 参考文献
+
 1. [js能够保证object属性的输出顺序吗？ - Jartto's blog](http://jartto.wang/2016/10/25/does-js-guarantee-object-property-order/)
 2. [Does JavaScript guarantee object property order? - Stack Overflow](https://stackoverflow.com/questions/5525795/does-javascript-guarantee-object-property-order)
 3. [ECMA-262_3rd_edition_december_1999](https://www.ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf)
